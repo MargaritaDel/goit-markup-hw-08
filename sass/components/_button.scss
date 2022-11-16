@@ -71,14 +71,12 @@
 
 .button-close {
     position: absolute;
-    top: 8px;
+    top: 28px;
     right: 8px;
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include flexCenter;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;

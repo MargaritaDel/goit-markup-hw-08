@@ -33,7 +33,7 @@
 
 .benefits__icon {
     height: 120px;
-    width: 450px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,46 +41,33 @@
     margin-bottom: 30px;
     border-radius: 4px;
 
-    @media screen and (min-width:768px) {
-        width: 354px;
-    }
-
-    @media screen and (min-width:1200px) {
-        width: 270px;
-    }
 
 
 }
 
 .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-    @media screen and (min-width:768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    @media screen and (min-width:1200px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
 
 }
 
 
 .benefits__item {
+    width: 100%;
 
-    @media screen and (min-width:1200px) {
-        display: block;
-        justify-content: center;
-        align-items: center;
+    @media screen and (min-width:767px) {
+        max-width: 450px;
 
         @media screen and (min-width:768px) {
             width: 354px;
         }
 
         @media screen and (min-width:1200px) {
+            display: block;
+            justify-content: center;
+            align-items: center;
             width: 270px;
         }
     }
