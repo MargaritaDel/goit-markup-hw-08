@@ -19,17 +19,6 @@
 
 }
 
-.benefits__text {
-    width: 450px;
-
-    @media screen and (min-width:768px) {
-        width: 354px;
-    }
-
-    @media screen and (min-width:1200px) {
-        width: 270px;
-    }
-}
 
 .benefits__icon {
     height: 120px;
@@ -40,8 +29,6 @@
     background-color: var(--filter-background-color);
     margin-bottom: 30px;
     border-radius: 4px;
-
-
 
 }
 

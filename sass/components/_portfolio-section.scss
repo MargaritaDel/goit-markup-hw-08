@@ -4,8 +4,22 @@
 
 .portfolio__filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 56px;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 8px;
+    margin-bottom: 46px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 56px;
+    }
 }
 
 .portfolio__filter:nth-of-type(3n) {
@@ -55,19 +69,31 @@
 
 
 .portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
 }
 
 
 .portfolio__card {
     display: block;
-    width: 370px;
+    width: 450px;
     background-color: var(--white-color);
     border: 1px solid #eeeeee;
     overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
